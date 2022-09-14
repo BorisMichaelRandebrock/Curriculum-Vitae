@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  margin: 0;
+}
+
+
+#foto {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 67px;
+  left: 13%;
+  transition: transform .7s ease-in-out;
+}
+
+#foto:hover {
+  transform: rotateX(360deg);
+  transform: rotate(360deg);
+  transform: rotateY(360deg);
+}
+
+h1 {
+  font-size: 4vw;
+  font-weight: 500;
+  line-height: 1.1;
+  font-family: 'Caveat Brush';
+  color: inherit;
+  margin-top: 55px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+nav li {
+  font-weight: 600;
+  list-style: none;
+  font-size: 1.5vw;
+}
+
+a {
+  color: rgb(107, 112, 141);
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: blue;
+  font-size: larger;
+  text-decoration: none;
+  pointer-events: cursor;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 25px;
+}
+
+nav h2 {
+  font-size: 3vw;
+  font-weight: 500;
+  line-height: 1.1;
+  font-family: 'Caveat Brush';
+  color: inherit;
+  margin: 15px 0px 45px;
+  text-align: center;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+  margin: 35px 50px 0px 50px;
+  width: -webkit-fill-available;
+}
+
+.welcome h3 {
+  margin-bottom: 15px;
+  text-align: -webkit-center;
+}
+
+.welcome article {
+  text-align: -webkit-center;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: rgb;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.footer-ul {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  /* margin: 44px 300px 15px; */
+  text-decoration: none;
+  list-style: none;
+  /* position: fixed; */
+  justify-content: center;
+}
+
+footer li {
+  margin: 15px;
+}
+
+.content_img div {
+  position: absolute;
+  bottom: 71px;
+  right: 40%;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7;
+}
