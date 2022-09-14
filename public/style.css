@@ -15,6 +15,18 @@ body {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Caveat Brush', cursive;
+  font-weight: 400;
+  line-height: 1.1;
+  color: inherit;
+}
+
 
 #foto {
   width: 10vw;
@@ -147,4 +159,65 @@ footer li {
   padding: 8px 15px;
   visibility: visible;
   opacity: 0.7;
+}
+
+/* 
+.underline {
+  text-decoration: underline;
+  width: max-content;
+} */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid grey;
+  margin: 3em 3em;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 25px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+
+section.maincontent {
+  width: 64%;
+  height: 100vh;
+  background: floralwhite;
+  padding: 0px 45px 0px 45px;
+}
+
+.sidebar-left {
+  width: 25%;
+  height: 100vh;
+  padding-left: 10%;
+}
+
+.sidebar-left li {
+  list-style: none;
+}
+
+.content-container li {
+  list-style: none;
+}
+
+h3 {
+  margin: 30px 0 15px;
+}
+
+#tools-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: -webkit-fill-available;
+  flex-wrap: wrap;
+  padding-right: 140px;
+}
+
+h3 {
+  font-size: 25px;
 }
