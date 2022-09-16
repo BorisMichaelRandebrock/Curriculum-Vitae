@@ -435,8 +435,21 @@ h3 {
     width: 64%;
     height: 100vh;
     background: floralwhite;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding: 1px 45px 45px 45px;
+  }
+
+  .maincontent li {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .maincontent h4 {
+    font-size: 5vw;
+    width: 100%;
+    line-height: inherit;
+    margin-top: 10px;
   }
 
 }
