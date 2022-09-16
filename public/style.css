@@ -33,7 +33,7 @@ h6 {
   height: 10vw;
   border-radius: 50%;
   position: absolute;
-  top: 67px;
+  top: 0px;
   left: 13%;
   transition: transform .7s ease-in-out;
 }
@@ -54,6 +54,10 @@ h1 {
   text-align: center;
 }
 
+.burger-nav {
+  display: none;
+}
+
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -65,6 +69,14 @@ nav li {
   font-weight: 600;
   list-style: none;
   font-size: 1.5vw;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 15px;
 }
 
 a {
@@ -122,7 +134,6 @@ footer {
   height: 60px;
   align-items: center;
   text-align: center;
-  background-color: #f0f0f0;
   align-items: center;
   text-align: center;
   background-color: #f0f0f0;
@@ -132,10 +143,8 @@ footer {
   display: flex;
   align-items: center;
   align-content: center;
-  /* margin: 44px 300px 15px; */
   text-decoration: none;
   list-style: none;
-  /* position: fixed; */
   justify-content: center;
 }
 
@@ -245,4 +254,182 @@ h3 {
   font-size: 1.5vw;
   width: 172px;
   line-height: inherit;
+}
+
+
+
+@media screen and (max-width:600px) {
+  .burger-nav {
+    display: block;
+    position: sticky;
+    height: 56px;
+    color: #333;
+    background-color: #f0f0f0;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  #foto {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 32px;
+    left: 13%;
+    transition: transform .7s ease-in-out;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .burger-wrapper {
+    cursor: pointer;
+  }
+
+  #meny {
+    background-color: #f0f0f0;
+    width: 75%;
+    height: 100vh;
+    position: fixed;
+    padding: 163px 55px 0 55px;
+    right: 0;
+    /* transition-timing-function: cubic-bezier(10, 2, 3, 1); */
+    transform: translateX(50rem);
+    top: 0;
+    z-index: 9;
+    transition: 0.5s;
+  }
+
+  #menyAvPaa {
+    display: none;
+  }
+
+  #menyAvPaa:checked~#meny {
+    transform: translateX(0rem);
+  }
+
+  #burger {
+    position: absolute;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    right: 2.9rem;
+    top: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  #burger-logo {
+    margin: 1.9rem;
+    width: 100px;
+  }
+
+  #burger>div {
+    height: 2px;
+    background-color: #333;
+    transition: 0.5s;
+    z-index: 999;
+  }
+
+  #menyAvPaa:checked~#burger>div {
+    background-color: #333;
+  }
+
+  #menyAvPaa:checked~#burger>div:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+  }
+
+  #menyAvPaa:checked~#burger>div:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menyAvPaa:checked~#burger>div:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+  }
+
+  #meny ul li {
+    text-decoration: none;
+    list-style: none;
+    margin: 50px 0 0 0px;
+  }
+
+  #meny ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: darkblue;
+    font-size: 30px;
+  }
+
+  #meny ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 19px 5px 19px;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-top: 55px;
+  }
+
+  .sidebar-left {
+    width: 100%;
+    height: 100vh;
+    padding: 0 10% 0 10%;
+  }
+
+  .sidebar-personal-data li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 12%;
+  }
+
+  .sidebar-left h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .sprach-li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .sprach-li li {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .sprach-li li span {
+    width: 45px;
+  }
+
+  #tools-box {
+    display: flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  section.maincontent {
+    width: 64%;
+    height: 100vh;
+    background: floralwhite;
+    margin-top: 100px;
+    padding: 1px 45px 45px 45px;
+  }
+
 }
