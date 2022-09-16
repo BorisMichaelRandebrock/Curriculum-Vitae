@@ -12,17 +12,39 @@
 
 <body>
   <nav>
-    <h1><a href="index.html">
-        -CURRICULUM VITAE-
-      </a>
-    </h1>
-    <h2>-Boris Michael Randebrock-</h2>
-    <ul>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="lebenslauf.html">Lebenslauf</a></li>
-      <li><a href="cv.html">CV</a></li>
-    </ul>
-    <img src="me.jpeg" alt="picture of myself" width="200" height="200" id="foto" />
+    <span class="desktop-nav">
+
+      <h1>-CURRICULUM VITAE-</h1>
+      <h2>-Boris Michael Randebrock-</h2>
+      <ul>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="lebenslauf.html">Lebenslauf</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+      <img src="me.jpeg" alt="picture of myself" width="200" height="200" id="foto" />
+    </span>
+    <span class="burger-nav">
+      <input type="checkbox" id="menyAvPaa">
+      <label id="burger" for="menyAvPaa">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <img src="me.jpeg" alt="picture of myself" width="200" height="200" id="foto" />
+
+      <span id="meny">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="lebenslauf.html">Lebenslauf</a></li>
+          <li><a href="cv.html">CV</a></li>
+
+        </ul>
+      </span>
+    </span>
+
   </nav>
   <hr>
   </hr>
@@ -44,13 +66,13 @@
       </ul>
 
       <h3>Sprachkenntnisse</h3>
-      <ul>
-        <li>👍🏻 Deutsch</li>
-        <li>👍🏻 Englisch</li>
-        <li>👍🏻 Spanisch</li>
-        <li>🤌🏻 Italienisch</li>
-        <li>🫳🏻 Catalan</li>
-        <li>🫳🏻 Französisch</li>
+      <ul class="sprach-li">
+        <li><span>👍🏻</span><span>Deutsch</span></li>
+        <li><span>👍🏻</span><span>Englisch</span></li>
+        <li><span>👍🏻</span> <span>Spanisch</span></li>
+        <li> <span>🤌🏻</span><span>Italienisch</span></li>
+        <li><span>🫳🏻</span><span>Catalan</span></li>
+        <li><span>🫳🏻</span><span>Französisch</span></li>
       </ul>
       <h3>Tech-stack</h3>
       <section id="tools-box">
