@@ -195,7 +195,6 @@ section.maincontent {
   width: 64%;
   position: sticky;
   bottom: 500px;
-  /* height: 100vh; */
   max-height: -webkit-fill-available;
   background: floralwhite;
   padding: 0px 45px 45px 45px;
@@ -204,7 +203,6 @@ section.maincontent {
 
 .sidebar-left {
   position: sticky;
-  /* top: 200px; */
   bottom: 500px;
   width: 25%;
   max-height: -webkit-fill-available;
@@ -452,7 +450,6 @@ h3 {
   .softskills h4 {
     font-size: 4.5vw;
     font-family: 'Quicksand';
-    /* margin: 10px 0px 5px; */
   }
 
   #tools-box {
@@ -468,9 +465,9 @@ h3 {
     height: 100;
     z-index: -1;
     background: floralwhite;
-    /* margin-top: 100px; */
-    /* position: inherit; */
-    position: initial;
+    margin-top: 50px;
+    position: relative;
+    bottom: 0px;
     padding: 1px 45px 45px 45px;
   }
 
