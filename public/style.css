@@ -35,7 +35,7 @@ h6 {
   border-radius: 50%;
   position: absolute;
   top: 0px;
-  left: 13%;
+  left: 12%;
   transition: transform .7s ease-in-out;
 }
 
@@ -189,6 +189,7 @@ hr {
   align-items: center;
   justify-content: space-between;
   margin-top: 55px;
+  list-style: none;
 }
 
 section.maincontent {
@@ -211,10 +212,6 @@ section.maincontent {
 }
 
 .sidebar-left li {
-  list-style: none;
-}
-
-.content-container li {
   list-style: none;
 }
 
@@ -462,7 +459,7 @@ h3 {
 
   section.maincontent {
     /* width: 64%; */
-    height: 100;
+    height: 100%;
     z-index: -1;
     background: floralwhite;
     margin-top: 50px;
