@@ -466,8 +466,8 @@ h3 {
     z-index: -1;
     background: floralwhite;
     margin-top: 50px;
-    position: relative;
-    bottom: 0px;
+    /* position: relative; */
+    bottom: auto;
     padding: 1px 45px 45px 45px;
   }
 
