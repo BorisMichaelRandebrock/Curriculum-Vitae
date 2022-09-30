@@ -469,7 +469,8 @@ h3 {
     z-index: -1;
     background: floralwhite;
     /* margin-top: 100px; */
-    position: inherit;
+    /* position: inherit; */
+    position: initial;
     padding: 1px 45px 45px 45px;
   }
 
@@ -484,6 +485,11 @@ h3 {
     width: 100%;
     line-height: inherit;
     margin-top: 10px;
+  }
+
+  .footer {
+    position: fixed bottom;
+    bottom: 0;
   }
 
 }
