@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Roboto&family=Space+Mono&display=swap');
 
 * {
@@ -22,7 +22,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Quicksand', 'Caveat Brush', cursive;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* font-family: 'Quicksand', cursive; */
   font-weight: 400;
   line-height: 1.1;
   color: inherit;
@@ -30,12 +31,12 @@ h6 {
 
 
 #foto {
-  width: 10vw;
-  height: 10vw;
+  width: 8vw;
+  height: 8vw;
   border-radius: 50%;
   position: absolute;
   top: 0px;
-  left: 12%;
+  left: 13%;
   transition: transform .7s ease-in-out;
 }
 
@@ -46,10 +47,10 @@ h6 {
 }
 
 h1 {
-  font-size: 4vw;
+  font-size: 2.2vw;
   font-weight: 500;
   line-height: 1.1;
-  font-family: 'Caveat Brush';
+  /* font-family: 'Caveat Brush'; */
   color: inherit;
   margin-top: 55px;
   text-align: center;
@@ -72,14 +73,14 @@ nav li {
   font-size: 1.5vw;
 }
 
-nav {
+/* nav {
   position: sticky;
   top: 0;
   width: 100%;
   height: fit-content;
   margin-bottom: 15px;
   background-color: #f0f0f0;
-}
+} */
 
 a {
   color: rgb(107, 112, 141);
@@ -101,10 +102,10 @@ a:hover {
 }
 
 nav h2 {
-  font-size: 3vw;
+  font-size: 2.2vw;
   font-weight: 500;
   line-height: 1.1;
-  font-family: 'Caveat Brush';
+  /* font-family: 'Caveat Brush'; */
   color: inherit;
   margin: 15px 0px 45px;
   text-align: center;
@@ -194,8 +195,8 @@ hr {
 
 section.maincontent {
   width: 64%;
-  position: sticky;
-  bottom: 500px;
+  /* position: sticky;
+  bottom: 500px; */
   max-height: -webkit-fill-available;
   background: floralwhite;
   padding: 0px 45px 45px 45px;
@@ -203,8 +204,8 @@ section.maincontent {
 }
 
 .sidebar-left {
-  position: sticky;
-  bottom: 500px;
+  /* position: sticky;
+  bottom: 500px; */
   width: 25%;
   max-height: -webkit-fill-available;
   padding-left: 10%;
@@ -265,6 +266,10 @@ h3 {
   font-size: 25px;
 }
 
+h4 {
+  font-weight: 500;
+}
+
 .maincontent li {
   display: flex;
   align-items: flex-start;
@@ -278,7 +283,35 @@ h3 {
   margin: 10px 0 5px;
 }
 
+@media screen and (min-width:601px) {
+  nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 15px;
+    background-color: #f0f0f0;
+  }
 
+  section.maincontent {
+    width: 64%;
+    position: sticky;
+    bottom: 500px;
+    max-height: -webkit-fill-available;
+    background: floralwhite;
+    padding: 0px 45px 45px 45px;
+    z-index: -1;
+  }
+
+  .sidebar-left {
+    position: sticky;
+    bottom: 500px;
+    width: 25%;
+    max-height: -webkit-fill-available;
+    padding-left: 10%;
+    z-index: -1;
+  }
+}
 
 @media screen and (max-width:600px) {
   .burger-nav {
@@ -486,4 +519,143 @@ h3 {
     bottom: 0;
   }
 
+}
+
+
+@media print {
+  @page {
+    size: A4;
+    /* size: portrait; */
+    margin: 0;
+  }
+
+  /* 
+  @page :first {
+    margin-top: 1cm 2cm;
+  }
+
+  @page :left {
+    margin-top: 3cm;
+  } */
+
+  #foto {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    left: 15%;
+  }
+
+  a {
+    page-break-inside: avoid;
+  }
+
+  blockquote {
+    page-break-inside: avoid;
+  }
+
+  html,
+  body {
+    width: 210mm;
+    height: 290mm;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav h1 {
+    font-size: 2.2vw;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-top: 55px;
+    padding-left: 78px;
+    text-align: center;
+  }
+
+
+  nav h2 {
+    font-size: 2.2vw;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin: 15px 0px 45px;
+    padding-left: 78px;
+    text-align: center;
+  }
+
+  h4 {
+    font-weight: 700;
+  }
+
+  .footer-ul {
+    display: none;
+  }
+
+  section.maincontent {
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: -webkit-fill-available;
+    background: floralwhite;
+    padding: 0px 45px 45px 45px;
+    z-index: -1;
+  }
+
+  .sidebar-left {
+    width: 25%;
+    max-height: -webkit-fill-available;
+    padding: 10%;
+    z-index: -1;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: -70px;
+    list-style: none;
+    align-items: center;
+  }
+
+  .academics {
+    page-break-inside: avoid;
+    position: relative;
+    top: -350px;
+    /* bottom: 20px; */
+    margin-bottom: 150px;
+  }
+
+  /* .personal-title {
+    margin-top: 150px;
+    margin-bottom: 50px;
+  } */
+
+  .sidebar-personal-data {
+    /* margin-bottom: 150px; */
+    margin-bottom: 20px;
+  }
+
+  .sprach-li {
+    margin: 15px 0 450px;
+  }
+
+  .softskill-section {
+    position: relative;
+    top: 50px;
+  }
+
+  .berufserfahrung {
+    position: absolute;
+    top: 1100px;
+  }
+
+  .tech-stack-pack {
+    position: absolute;
+    top: 700px;
+    width: 250px;
+  }
 }
