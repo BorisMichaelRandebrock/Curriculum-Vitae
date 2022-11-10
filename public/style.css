@@ -68,7 +68,7 @@ nav ul {
 }
 
 nav li {
-  font-weight: 600;
+  font-weight: 500;
   list-style: none;
   font-size: 1.5vw;
 }
@@ -193,6 +193,14 @@ hr {
   list-style: none;
 }
 
+h5 {
+  font-size: 1.2vw;
+  font-weight: 500;
+  /* font-family: 'Caveat Brush'; */
+  color: inherit;
+
+}
+
 section.maincontent {
   width: 64%;
   /* position: sticky;
@@ -279,8 +287,17 @@ h4 {
 
 .maincontent h4 {
   font-size: 1.5vw;
+  font-weight: 500;
   line-height: inherit;
-  margin: 10px 0 5px;
+  margin: 5px 0 0px;
+}
+
+.maincontent p {
+  padding-bottom: 15px;
+}
+
+.maincontent article {
+  padding-bottom: 15px;
 }
 
 @media screen and (min-width:601px) {
@@ -587,7 +604,7 @@ h4 {
   }
 
   h4 {
-    font-weight: 700;
+    font-weight: 500;
   }
 
   .footer-ul {
@@ -595,13 +612,14 @@ h4 {
   }
 
   section.maincontent {
-    width: 64%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     max-height: -webkit-fill-available;
     background: floralwhite;
-    padding: 0px 45px 45px 45px;
+    margin-right: 25px;
+    /* padding: 0px 45px 45px 45px; */
     z-index: -1;
   }
 
@@ -645,17 +663,45 @@ h4 {
 
   .softskill-section {
     position: relative;
-    top: 50px;
+    top: 130px;
   }
 
   .berufserfahrung {
     position: absolute;
     top: 1100px;
+    padding-right: 20px;
   }
 
   .tech-stack-pack {
     position: absolute;
     top: 700px;
     width: 250px;
+  }
+
+  article {
+    display: none;
+  }
+
+  .work-experience {
+    margin-bottom: 30px;
+  }
+
+  .hide-functions {
+    display: none;
+  }
+
+  .berufserfahrung,
+  .academics h3 {
+    margin-top: 80px;
+    font-weight: 500;
+  }
+
+  .berufserfahrung,
+  .academics h4 {
+    font-weight: 600;
+  }
+
+  .softskill-section h4 {
+    font-weight: 600;
   }
 }
