@@ -302,6 +302,11 @@ h4 {
   padding-bottom: 15px;
 }
 
+.transmallorca {
+  display: none;
+  /* visibility: hidden; */
+}
+
 @media screen and (min-width:601px) {
   nav {
     position: sticky;
@@ -705,7 +710,6 @@ h4 {
   }
 
   .academics h3 {
-    /* margin-top: 20px; */
     font-weight: 500;
   }
 
@@ -717,6 +721,7 @@ h4 {
   .berufserfahrung h3 {
     margin-top: 80px;
     font-weight: 500;
+    margin-bottom: 0px;
   }
 
   .berufserfahrung h4 {
@@ -733,5 +738,11 @@ h4 {
 
   .softskill-section p {
     font-weight: 400;
+  }
+
+  .transmallorca {
+    display: initial;
+    /* position: absolute;
+    top: 1500px; */
   }
 }
