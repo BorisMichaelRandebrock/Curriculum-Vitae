@@ -303,8 +303,8 @@ h4 {
 }
 
 .transmallorca {
-  display: none;
-  /* visibility: hidden; */
+  /* display: none; */
+  visibility: hidden;
 }
 
 @media screen and (min-width:601px) {
@@ -316,6 +316,13 @@ h4 {
     margin-bottom: 15px;
     background-color: #f0f0f0;
   }
+
+  /* 
+  .transmallorca {
+    display: none; 
+    visibility: hidden;
+  }
+  */
 
   section.maincontent {
     width: 64%;
@@ -350,6 +357,13 @@ h4 {
     cursor: pointer;
     z-index: 999;
   }
+
+  /*
+  .transmallorca {
+     display: none;
+    visibility: hidden;
+  }
+  */
 
   #foto {
     width: 10vw;
@@ -470,7 +484,7 @@ h4 {
 
     width: 100%;
     height: 100%;
-    padding: 0 10% 0 10%;
+    /* padding: 0 10% 0 10%; */
     /* margin-bottom: 75px; */
   }
 
@@ -532,14 +546,14 @@ h4 {
   }
 
   section.maincontent {
-    /* width: 64%; */
+    width: 90%;
     height: 100%;
     z-index: -1;
     background: floralwhite;
     margin-top: 50px;
     /* position: relative; */
     bottom: auto;
-    padding: 1px 45px 45px 45px;
+    /* padding: 1px 45px 45px 45px; */
   }
 
   .maincontent li {
@@ -741,7 +755,14 @@ h4 {
   }
 
   .transmallorca {
-    display: initial;
+    visibility: hidden;
+    position: absolute;
+    bottom: 30px;
+    /* display: block; */
+    display: none;
+    color: white;
+    /* padding-bottom: 30px; */
+    /* display: initial; */
     /* position: absolute;
     top: 1500px; */
   }
