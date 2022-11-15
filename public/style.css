@@ -307,9 +307,9 @@ h4 {
   visibility: hidden;
 }
 
-.lengua {
+/* .lengua {
   width: 50px;
-}
+} */
 
 @media screen and (min-width:601px) {
   nav {
@@ -653,7 +653,7 @@ h4 {
   }
 
   section.maincontent {
-    width: 75%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -686,7 +686,19 @@ h4 {
     margin-bottom: 150px;
   }
 
+
+  #english-academics {
+    page-break-inside: avoid;
+    position: relative;
+    top: -390px;
+    margin-bottom: 150px;
+  }
+
   .personal-title {
+    font-weight: 600;
+  }
+
+  .english-h3-title {
     font-weight: 600;
   }
 
@@ -715,7 +727,23 @@ h4 {
     width: 250px;
   }
 
+  .esp-tech-stack-pack {
+    position: absolute;
+    top: 660px;
+    width: 250px;
+  }
+
+  .eng-tech-stack-pack {
+    position: absolute;
+    top: 640px;
+    width: 250px;
+  }
+
   .tech-stack-pack h3 {
+    font-weight: 600;
+  }
+
+  .tech-title {
     font-weight: 600;
   }
 
@@ -766,12 +794,15 @@ h4 {
     visibility: hidden;
     position: absolute;
     bottom: 30px;
-    /* display: block; */
     display: none;
     color: white;
-    /* padding-bottom: 30px; */
-    /* display: initial; */
-    /* position: absolute;
-    top: 1500px; */
+  }
+
+  .supply-es-space {
+    margin-top: 12px;
+  }
+
+  .sprach-li {
+    width: 10cm;
   }
 }
