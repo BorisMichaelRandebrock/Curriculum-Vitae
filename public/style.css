@@ -725,7 +725,7 @@ h4 {
   .academics {
     page-break-inside: avoid;
     position: relative;
-    top: -330px;
+    top: -320px;
     margin-bottom: 150px;
   }
 
@@ -738,8 +738,24 @@ h4 {
   #english-academics {
     page-break-inside: avoid;
     position: relative;
-    top: -390px;
+    top: -370px;
     margin-bottom: 150px;
+  }
+
+  #english-academics p {
+    font-size: 12px;
+  }
+
+  #mba-en {
+    position: relative;
+    top: -13px;
+    left: -22px;
+  }
+
+  #mba-icon-eng {
+    position: relative;
+    top: 5px;
+    left: -7px;
   }
 
   .interline {
@@ -777,6 +793,12 @@ h4 {
   .berufserfahrung {
     position: absolute;
     top: 1125px;
+    padding-right: 20px;
+  }
+
+  .berufserfahrung-eng {
+    position: absolute;
+    top: 1175px;
     padding-right: 20px;
   }
 
