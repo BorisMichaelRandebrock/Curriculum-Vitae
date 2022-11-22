@@ -738,12 +738,18 @@ h4 {
   #english-academics {
     page-break-inside: avoid;
     position: relative;
-    top: -370px;
+    top: -360px;
     margin-bottom: 150px;
   }
 
   #english-academics p {
     font-size: 12px;
+  }
+
+  #english-academics h4 {
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 5px;
   }
 
   #mba-en {
@@ -775,19 +781,32 @@ h4 {
 
   .sidebar-personal-data {
     margin-bottom: 20px;
-  }
-
-  .sidebar-personal-data {
     font-size: 10px;
   }
 
   .sprach-li {
     margin: 15px 0 450px;
+    width: 13cm;
+    font-size: 10px;
+  }
+
+  #sprach-li-eng {
+    font-size: 11px;
   }
 
   .softskill-section {
     position: relative;
     top: 119px;
+  }
+
+
+  #softskill-section-eng {
+    /* position: relative; */
+    top: 119px;
+  }
+
+  #softskill-section-eng p {
+    font-size: 11px;
   }
 
   .berufserfahrung {
@@ -898,9 +917,6 @@ h4 {
     margin-top: 12px;
   } */
 
-  .sprach-li {
-    width: 13cm;
-  }
 
   .square-icons {
     top: 1px;
