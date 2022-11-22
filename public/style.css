@@ -729,6 +729,10 @@ h4 {
     margin-bottom: 150px;
   }
 
+  #german-academics {
+    top: -320px;
+  }
+
   h3 {
     font-size: 17px;
     font-weight: 700;
@@ -806,6 +810,10 @@ h4 {
   }
 
   #softskill-section-eng p {
+    font-size: 11px;
+  }
+
+  #german-softskills li p {
     font-size: 11px;
   }
 
