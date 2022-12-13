@@ -523,7 +523,7 @@ h4 {
   }
 
   section.maincontent {
-    width: 90%;
+    width: auto;
     height: 100%;
     z-index: -1;
     background: floralwhite;
@@ -546,6 +546,7 @@ h4 {
   .footer {
     position: fixed bottom;
     bottom: 0;
+    -webkit-mask-position-y: bottom;
   }
 
   section.academics {
