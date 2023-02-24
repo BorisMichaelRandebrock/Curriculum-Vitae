@@ -676,12 +676,12 @@ h4 {
   .academics {
     page-break-inside: avoid;
     position: relative;
-    top: -320px;
+    top: -900px;
     margin-bottom: 150px;
   }
 
   #german-academics {
-    top: -360px;
+    top: -900px;
   }
 
   #german-academics p {
@@ -696,7 +696,7 @@ h4 {
   #english-academics {
     page-break-inside: avoid;
     position: relative;
-    top: -360px;
+    top: -900px;
     margin-bottom: 150px;
   }
 
