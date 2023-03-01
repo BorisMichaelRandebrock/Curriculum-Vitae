@@ -701,7 +701,7 @@ h4 {
   #english-academics {
     page-break-inside: avoid;
     position: relative;
-    top: -900px;
+    top: -990px;
     margin-bottom: 150px;
   }
 
@@ -767,7 +767,7 @@ h4 {
   }
 
   #softskill-section-eng {
-    top: 119px;
+    top: 180px;
   }
 
   #softskill-section-eng p {
@@ -786,7 +786,7 @@ h4 {
 
   .berufserfahrung-eng {
     position: absolute;
-    top: 1175px;
+    top: 1245px;
     padding-right: 20px;
   }
 
