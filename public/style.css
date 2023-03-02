@@ -747,6 +747,11 @@ h4 {
     margin-top: 35px;
   }
 
+  .personal-title-eng {
+    font-weight: 600;
+    margin-top: 55px;
+  }
+
   .english-h3-title {
     font-weight: 600;
   }
@@ -772,7 +777,7 @@ h4 {
   }
 
   #softskill-section-eng {
-    top: 180px;
+    top: 203px;
   }
 
   #softskill-section-eng p {
