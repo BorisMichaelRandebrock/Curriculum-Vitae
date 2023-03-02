@@ -681,8 +681,13 @@ h4 {
   .academics {
     page-break-inside: avoid;
     position: relative;
-    top: -900px;
+    top: -1010px;
     margin-bottom: 150px;
+  }
+
+  .academics p {
+    font-size: 10px;
+    text-align: justify;
   }
 
   #german-academics {
@@ -739,7 +744,7 @@ h4 {
 
   .personal-title {
     font-weight: 600;
-    margin-top: 55px;
+    margin-top: 35px;
   }
 
   .english-h3-title {
@@ -763,7 +768,7 @@ h4 {
 
   .softskill-section {
     position: relative;
-    top: 119px;
+    top: 219px;
   }
 
   #softskill-section-eng {
@@ -780,7 +785,7 @@ h4 {
 
   .berufserfahrung {
     position: absolute;
-    top: 1125px;
+    top: 1190px;
     padding-right: 20px;
   }
 
