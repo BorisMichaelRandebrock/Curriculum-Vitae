@@ -208,7 +208,6 @@ section.maincontent {
   max-height: -webkit-fill-available;
   background: floralwhite;
   padding: 0px 45px 45px 45px;
-  /* z-index: -1; */
   z-index: 0;
 }
 
@@ -216,7 +215,6 @@ section.maincontent {
   width: 30%;
   max-height: -webkit-fill-available;
   padding-left: 2%;
-  /* z-index: -1; */
   z-index: 0;
   background-color: lightgray;
 }
@@ -692,7 +690,7 @@ h4 {
   }
 
   #german-academics {
-    top: -900px;
+    top: -995px;
   }
 
   #german-academics p {
@@ -753,6 +751,11 @@ h4 {
     margin-top: 55px;
   }
 
+  .personal-title-german {
+    font-weight: 600;
+    margin-top: 52px;
+  }
+
   .english-h3-title {
     font-weight: 600;
   }
@@ -792,6 +795,12 @@ h4 {
   .berufserfahrung {
     position: absolute;
     top: 1190px;
+    padding-right: 20px;
+  }
+
+  .berufserfahrung-de {
+    position: absolute;
+    top: 1258px;
     padding-right: 20px;
   }
 
