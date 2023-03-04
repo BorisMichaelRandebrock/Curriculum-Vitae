@@ -530,7 +530,6 @@ h4 {
     position: inherit;
     width: auto;
     height: 100%;
-    /* z-index: -1; */
     z-index: 0;
     background: floralwhite;
     bottom: auto;
