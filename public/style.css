@@ -467,7 +467,7 @@ h4 {
   }
 
   .sidebar-left {
-    position: relative;
+    position: inherit;
     padding-bottom: 20px;
     width: 100%;
     height: 100%;
