@@ -530,7 +530,7 @@ h4 {
 
   section.maincontent {
     position: absolute;
-    padding: 0px 45px 3805px 45px;
+    padding: 0px 45px 3900px 45px;
     top: 1688px;
     /* position: relative; */
     width: auto;
@@ -548,6 +548,29 @@ h4 {
     background: floralwhite;
     bottom: auto; */
   }
+
+  #maincontent-es {
+    position: absolute;
+    padding: 0px 45px 3955px 45px;
+    top: 1629px;
+    width: auto;
+    height: 100%;
+    z-index: 1;
+    background: floralwhite;
+    bottom: auto;
+  }
+
+  #maincontenct-english {
+    position: absolute;
+    padding: 0px 45px 3702px 45px;
+    top: 1708px;
+    width: auto;
+    height: 100%;
+    z-index: 1;
+    background: floralwhite;
+    bottom: auto;
+  }
+
 
   .maincontent li {
     display: flex;
