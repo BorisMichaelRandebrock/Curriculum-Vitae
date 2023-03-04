@@ -136,6 +136,7 @@ nav h2 {
 
 footer {
   position: fixed;
+  z-index: 1;
   /* position: sticky; */
   bottom: 0;
   width: 100%;
@@ -467,7 +468,8 @@ h4 {
   }
 
   .sidebar-left {
-    position: inherit;
+    position: relative;
+    z-index: 1;
     padding-bottom: 20px;
     width: 100%;
     height: 100%;
@@ -527,10 +529,10 @@ h4 {
   }
 
   section.maincontent {
-    position: inherit;
+    position: relative;
     width: auto;
     height: 100%;
-    z-index: 0;
+    z-index: 1;
     background: floralwhite;
     bottom: auto;
   }
@@ -550,6 +552,7 @@ h4 {
 
   .footer {
     position: fixed bottom;
+    z-index: 2;
     bottom: 0;
     -webkit-mask-position-y: bottom;
   }
@@ -942,6 +945,7 @@ h4 {
   .page-number2es {
     display: contents;
     position: absolute;
+    z-index: 2;
     text-align: center;
     font-size: 10px;
     color: #999;
@@ -952,6 +956,7 @@ h4 {
 
   .pagenumber {
     display: flex;
+    z-index: 2;
     position: relative;
     align-items: center;
     justify-content: center;
