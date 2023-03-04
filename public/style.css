@@ -529,12 +529,24 @@ h4 {
   }
 
   section.maincontent {
-    position: relative;
+    position: absolute;
+    padding: 0px 45px 3805px 45px;
+    top: 1688px;
+    /* position: relative; */
     width: auto;
     height: 100%;
     z-index: 1;
     background: floralwhite;
     bottom: auto;
+
+    /* position: absolute;
+    top: 1710px; */
+    /* position: relative; */
+    /* width: auto;
+    height: 100%;
+    z-index: 1;
+    background: floralwhite;
+    bottom: auto; */
   }
 
   .maincontent li {
