@@ -527,7 +527,7 @@ h4 {
   }
 
   section.maincontent {
-    position: relative;
+    position: inherit;
     width: auto;
     height: 100%;
     /* z-index: -1; */
