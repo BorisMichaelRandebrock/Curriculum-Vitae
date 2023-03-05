@@ -206,7 +206,7 @@ h5 {
 
 section.maincontent {
   width: 64%;
-  max-height: -webkit-fill-available;
+  /* max-height: -webkit-fill-available; */
   background: floralwhite;
   padding: 0px 45px 45px 45px;
   z-index: 0;
@@ -214,7 +214,8 @@ section.maincontent {
 
 .sidebar-left {
   width: 30%;
-  max-height: -webkit-fill-available;
+  height: 100%;
+  /* max-height: -webkit-fill-available; */
   padding-left: 2%;
   z-index: 0;
   background-color: lightgray;
@@ -328,7 +329,7 @@ h4 {
     width: 64%;
     position: sticky;
     bottom: 500px;
-    max-height: -webkit-fill-available;
+    /* max-height: -webkit-fill-available; */
     background: floralwhite;
     padding: 0px 45px 45px 45px;
     /* z-index: -1; */
@@ -339,8 +340,10 @@ h4 {
     position: sticky;
     bottom: 500px;
     width: 28%;
-    max-height: -webkit-fill-available;
+    /* max-height: -webkit-fill-available; */
+    height: auto;
     padding-left: 2%;
+    padding-bottom: 30px;
     /* z-index: -1; */
     z-index: 0;
   }
@@ -470,7 +473,7 @@ h4 {
   .sidebar-left {
     position: relative;
     z-index: 1;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
     width: 100%;
     height: 100%;
   }
@@ -530,7 +533,7 @@ h4 {
 
   section.maincontent {
     position: absolute;
-    padding: 0px 45px 3900px 45px;
+    padding: 0px 45px 3050px 45px;
     top: 1688px;
     /* position: relative; */
     width: auto;
@@ -551,7 +554,7 @@ h4 {
 
   #maincontent-es {
     position: absolute;
-    padding: 0px 45px 3955px 45px;
+    padding: 0px 45px 3100px 45px;
     top: 1629px;
     width: auto;
     height: 100%;
@@ -562,7 +565,7 @@ h4 {
 
   #maincontenct-english {
     position: absolute;
-    padding: 0px 45px 3702px 45px;
+    padding: 0px 45px 2850px 45px;
     top: 1708px;
     width: auto;
     height: 100%;
