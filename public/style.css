@@ -87,20 +87,30 @@ nav li {
 a {
   color: rgb(107, 112, 141);
   text-decoration: none;
+  transition: all 0.5s ease-in-out;
 
 }
 
 a:hover {
-  color: blue;
+  color: darkmagenta;
   font-size: larger;
   text-decoration: none;
   pointer-events: cursor;
+  /* 
+  transform: perspective(10px) translateZ(0);
+  */
 }
+
 
 .container {
   display: flex;
   flex-direction: column;
   margin: 0px 25px;
+}
+
+.home-container {
+  background: floralwhite;
+  /* margin: 0px; */
 }
 
 nav h2 {
@@ -137,7 +147,6 @@ nav h2 {
 footer {
   position: fixed;
   z-index: 1;
-  /* position: sticky; */
   bottom: 0;
   width: 100%;
   height: 80px;
@@ -206,7 +215,6 @@ h5 {
 
 section.maincontent {
   width: 64%;
-  /* max-height: -webkit-fill-available; */
   background: floralwhite;
   padding: 0px 45px 45px 45px;
   z-index: 0;
@@ -215,7 +223,6 @@ section.maincontent {
 .sidebar-left {
   width: 30%;
   height: 100%;
-  /* max-height: -webkit-fill-available; */
   padding-left: 2%;
   z-index: 0;
   background-color: lightgray;
@@ -313,6 +320,26 @@ h4 {
   visibility: hidden;
 }
 
+.sobre-mi {
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+.sobre-mi p {
+  font-style: italic;
+
+}
+
+.softskills summary {
+  /* color: blue; */
+  color: darkblue;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.softskills details p {
+  font-style: italic;
+}
 
 
 @media screen and (min-width:601px) {
@@ -561,9 +588,6 @@ h4 {
   #maincontenct-english {
     position: relative;
     padding: 0px 45px 20px 45px;
-    /* position: absolute;
-    padding: 0px 45px 2850px 45px;
-    top: 1708px; */
     width: auto;
     height: 100%;
     z-index: 1;
@@ -576,12 +600,16 @@ h4 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: justify;
   }
+
+
 
   .maincontent h4 {
     font-size: 5vw;
     width: 100%;
     line-height: inherit;
+    text-align: left;
     margin-top: 10px;
   }
 
@@ -594,6 +622,14 @@ h4 {
 
   section.academics {
     padding-right: 15px;
+  }
+
+  .sobre-mi {
+    margin: 0px 10%;
+  }
+
+  .sobre-mi p {
+    text-align: justify;
   }
 
 }
@@ -685,6 +721,11 @@ h4 {
     color: blue;
   }
 
+  .softskills summary {
+    color: blue;
+    font-size: 12px;
+  }
+
   .footer-ul {
     display: none;
   }
@@ -705,6 +746,16 @@ h4 {
     max-height: -webkit-fill-available;
     padding: 10%;
     z-index: -1;
+  }
+
+  .personal-title-spanish {
+    position: relative;
+    top: 30px;
+  }
+
+  .sprach-li-es {
+    position: relative;
+    top: 30px;
   }
 
   .content-container {
@@ -952,6 +1003,25 @@ h4 {
 
   .square-icons {
     top: 1px;
+  }
+
+  .sobre-mi {
+    position: relative;
+    top: 230px;
+    font-size: 10px;
+    text-align: justify;
+  }
+
+  /* .sobre-mi p {
+    font-size: 11px;
+    display: block;
+  } */
+  .sobre-mi-main {
+    display: none;
+    position: absolute;
+    top: 2500px;
+    font-style: italic;
+
   }
 
   .page-number1 {
