@@ -330,6 +330,15 @@ h4 {
 
 }
 
+.about-me {
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+.about-me p {
+  font-style: italic;
+}
+
 .softskills summary {
   /* color: blue; */
   color: darkblue;
@@ -628,7 +637,15 @@ h4 {
     margin: 0px 10%;
   }
 
+  .about-me {
+    margin: 0px 10%;
+  }
+
   .sobre-mi p {
+    text-align: justify;
+  }
+
+  .about-me p {
     text-align: justify;
   }
 
@@ -1012,17 +1029,24 @@ h4 {
     text-align: justify;
   }
 
+  .about-me {
+    position: relative;
+    top: 230px;
+    font-size: 10px;
+    text-align: justify;
+  }
+
   /* .sobre-mi p {
     font-size: 11px;
     display: block;
   } */
-  .sobre-mi-main {
+  /* .sobre-mi-main {
     display: none;
     position: absolute;
     top: 2500px;
     font-style: italic;
 
-  }
+  } */
 
   .page-number1 {
     display: contents;
